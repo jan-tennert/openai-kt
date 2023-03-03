@@ -1,5 +1,9 @@
 import com.vanniktech.maven.publish.SonatypeHost
 
+repositories {
+    mavenCentral()
+}
+
 plugins {
     kotlin("multiplatform") version Versions.KOTLIN
     id("com.android.library")
@@ -7,13 +11,9 @@ plugins {
     id("com.vanniktech.maven.publish") version "0.24.0"
   //  id("org.jetbrains.dokka") version Versions.DOKKA
 }
-
 group = "io.github.jan-tennert"
-version = "0.1"
 
-repositories {
-    mavenCentral()
-}
+version = "0.1"
 
 kotlin {
     jvm {

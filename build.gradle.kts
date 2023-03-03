@@ -2,6 +2,8 @@ import com.vanniktech.maven.publish.SonatypeHost
 
 repositories {
     mavenCentral()
+    gradlePluginPortal()
+    google()
 }
 
 plugins {

@@ -7,4 +7,6 @@ object Versions {
     const val NAPIER = "2.6.1"
     const val NEXUS_STAGING = "0.30.0"
 
+    const val PROJECT = "0.0.1"
+
 }

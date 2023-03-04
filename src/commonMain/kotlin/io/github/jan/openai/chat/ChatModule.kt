@@ -16,12 +16,4 @@ class ChatModule(@PublishedApi internal val httpClient: HttpClient) {
         }.body()
     }
 
-    inline fun newSession(system: String, requestData: ChatRequestData.() -> Unit = {}): ChatSession {
-        return ChatSession(ChatRequestData(messages = listOf(ChatMessageData.system(system))).apply(requestData), this)
-    }
-
-    inline fun sessionFromRequestData(requestData: ChatRequestData): ChatSession {
-        return ChatSession(requestData, this)
-    }
-
 }
